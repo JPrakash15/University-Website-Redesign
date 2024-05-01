@@ -4,6 +4,8 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+@import url(https://fonts.googleapis.com/css?family=Alegreya:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
 *{
     padding:0;
     margin:0;
@@ -26,6 +28,14 @@ nav{
 }
 nav img{
     width:150px;
+}
+.nav{
+    display: flex;
+    /* justify-content:space-around ; */
+}
+
+.nav_list-2{
+    margin-left: auto;
 }
 .nav-links{
     flex:1;
@@ -106,6 +116,10 @@ nav .fa-solid{
     .nav-links ul li{
         display: block;
     }
+    .nav{
+        display: block;
+        
+    }
     .nav-links{
         position:absolute;
         background: #f44336;
@@ -116,6 +130,7 @@ nav .fa-solid{
         right: -220px ;
         text-align: left;
         z-index: 2;
+        /* display: hi; */
         transition: ease-out 1s;
     }
     nav .fa-solid{
@@ -251,6 +266,11 @@ h3{
 }
 .facilities-col p{
     padding: 0;
+    text-align: center;
+}
+
+.facilities-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
 }
 
 /* -------Testimonials------- */
@@ -278,6 +298,8 @@ h3{
 }
 .testimonial-col p{
     padding: 0;
+    font-family: 'Alegreya', serif;
+    font-weight: 200;
 
 }
 .testimonial-col h3{
@@ -288,6 +310,11 @@ h3{
 .testimonial-col .fa{
     color:#f44336
 }
+
+.testimonial-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
 @media(max-width:700px){
     .testimonial-col img{
         margin-left: 0px;
@@ -308,12 +335,48 @@ h3{
 }
 .cta h1{
     color:#fff;
-    margin-bottom: 40px;
     padding: 0;
 }
+
+.mar-btn{
+    margin-top: 40px;
+}
+
 @media(max-width:700px){
     .cta h1{
         font-size: 24px;
         padding: 0 8px 8px;
     }    
+}
+
+/* Footer */
+.footer{
+    width:100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h1{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.icons .fa{
+    font-size: 1.25rem;
+    color:#f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.mail a{
+    color:#777;
+    text-decoration: none;
+}
+.mail .fa{
+    color:#f44336;
 }
